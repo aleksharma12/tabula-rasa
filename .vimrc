@@ -18,6 +18,9 @@ Plugin 'kien/ctrlp.vim'
 " Syntax Highlighting
 Plugin 'scrooloose/syntastic'
 
+" Git Integration & Tags
+Plugin 'fugitive.vim'
+
 " Pesky whitespace solution
 Plugin 'ntpeters/vim-better-whitespace'
 
@@ -52,6 +55,9 @@ set hlsearch
 " use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+
+" add full file path to existing statusline
+set statusline+=%F
 
 " allow backspacing over autoindent, linebreaks and start of insert action
 set backspace=indent,eol,start
@@ -114,10 +120,11 @@ map Y y$
 
 " map <C-L> (redraw screen) to also turn off search highlighting until next
 " search
-nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <silent> <C-L> :nohl<CR><C-L>
 
-" set tags file
-set tags="./.git/tags ."
+" CTRL-P SETTINGS
+" ignore .pyc files when searching with CTRL-P
+let g:ctrlp_custom_ignore = '\v\.(pyc)$'
 
 " SYNTASTIC SETTINGS
 set statusline+=%#warningmsg#
