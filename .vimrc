@@ -30,7 +30,6 @@ filetype plugin indent on
 " syntax highlighting, duh
 syntax on
 
-
 " color scheme and background
 set background=dark
 colorscheme solarized
