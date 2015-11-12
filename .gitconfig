@@ -1,0 +1,7 @@
+[user]
+	name = Alek Sharma
+	email = aleksharma12@gmail.com
+[core]
+    editor = vim
+[push]
+	default = simple
