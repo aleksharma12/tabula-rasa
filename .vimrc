@@ -5,14 +5,24 @@ filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
+" All the packages
+call vundle#begin()
+"
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Search for files
 Plugin 'kien/ctrlp.vim'
+
+" Syntax Highlighting
 Plugin 'scrooloose/syntastic'
 
+" Pesky whitespace solution
+Plugin 'ntpeters/vim-better-whitespace'
+
 call vundle#end()
+
 " determine the type of file based on name and (maybe) contents
 " adds auto-indenting for filetypes/plugins
 filetype plugin indent on
@@ -20,15 +30,6 @@ filetype plugin indent on
 " syntax highlighting, duh
 syntax on
 
-" linting for syntax errors
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " color scheme and background
 set background=dark
@@ -49,7 +50,7 @@ set showcmd
 set hlsearch
 
 " USABILITY OPTIONS
-" use case insensitive search, except when using capital letters 
+" use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
 
@@ -118,3 +119,13 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 " set tags file
 set tags="./.git/tags ."
+
+" SYNTASTIC SETTINGS
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
