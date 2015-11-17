@@ -56,11 +56,14 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" add full file path to existing statusline
-set statusline+=%F
-
 " allow backspacing over autoindent, linebreaks and start of insert action
 set backspace=indent,eol,start
+
+" treat all numerals as decimal
+set nrformats=
+
+" add full file path to existing statusline
+set statusline+=%F
 
 " maintain same indent as current line when opening new line
 set autoindent
@@ -70,9 +73,6 @@ set cursorline
 
 " adds column at some char limit
 set colorcolumn=99
-
-" prevent certain movements from always going to start of line
-set nostartofline
 
 " display cursor position on last line of screen or status line
 set ruler
