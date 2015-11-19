@@ -24,8 +24,11 @@ Plugin 'hynek/vim-python-pep8-indent'
 " Git Integration & Tags
 Plugin 'fugitive.vim'
 
-" Pesky whitespace solution
+" Better whitespace
 Plugin 'ntpeters/vim-better-whitespace'
+
+" Fast commenting
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
@@ -59,6 +62,12 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" allow backspacing over autoindent, linebreaks and start of insert action
+set backspace=indent,eol,start
+
+" treat all numerals as decimal
+set nrformats=
+
 " add full file path to existing statusline
 set statusline+=%F
 
@@ -73,9 +82,6 @@ set cursorline
 
 " adds column at some char limit
 set colorcolumn=99
-
-" prevent certain movements from always going to start of line
-set nostartofline
 
 " display cursor position on last line of screen or status line
 set ruler
@@ -136,3 +142,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" STUPID NETRWHIST
+let g:netrw_dirhistmax = 0
