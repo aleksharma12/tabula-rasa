@@ -18,6 +18,9 @@ Plugin 'kien/ctrlp.vim'
 " Syntax Highlighting
 Plugin 'scrooloose/syntastic'
 
+" Sane Python indentation
+Plugin 'hynek/vim-python-pep8-indent'
+
 " Git Integration & Tags
 Plugin 'fugitive.vim'
 
@@ -59,11 +62,11 @@ set smartcase
 " add full file path to existing statusline
 set statusline+=%F
 
-" allow backspacing over autoindent, linebreaks and start of insert action
-set backspace=indent,eol,start
-
 " maintain same indent as current line when opening new line
 set autoindent
+
+" allow backspacing over autoindent, linebreaks and start of insert action
+set backspace=indent,eol,start
 
 " adds a horizontal line beneath current line
 set cursorline
@@ -107,12 +110,10 @@ set pastetoggle=<F11>
 
 " INDENTATION OPTIONS
 " use 4 spaces instead of tabs
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-" use hard tabs for indent and display tabs as 4 chars wide
 set tabstop=4
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 
 " MAPPINGS
 " map Y to act like D and C, i.e. to yank until EOL, rather than default yy
