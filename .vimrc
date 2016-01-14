@@ -57,6 +57,9 @@ set showcmd
 " highlight searches
 set hlsearch
 
+" copy/paste bullshit
+set clipboard=unnamed
+
 " USABILITY OPTIONS
 " use case insensitive search, except when using capital letters
 set ignorecase
@@ -81,7 +84,7 @@ set backspace=indent,eol,start
 set cursorline
 
 " adds column at some char limit
-set colorcolumn=99
+set colorcolumn=79
 
 " display cursor position on last line of screen or status line
 set ruler
