@@ -27,7 +27,7 @@ Plugin 'fugitive.vim'
 " Better whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
-" Fast commenting
+" Block commenting
 Plugin 'tpope/vim-commentary'
 
 call vundle#end()
