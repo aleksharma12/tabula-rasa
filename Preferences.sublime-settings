@@ -1,0 +1,17 @@
+{
+	"auto_complete": false,
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+	"create_window_at_startup": false,
+	"find_selected_text": true,
+	"font_face": "Monaco",
+	"highlight_modified_tabs": true,
+	"match_brackets_angle": true,
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"theme": "Sodarized Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+}
