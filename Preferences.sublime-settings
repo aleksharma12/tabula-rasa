@@ -12,6 +12,7 @@
 	"match_brackets_angle": true,
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
+	"show_full_path": true,
 	"theme": "Sodarized Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
