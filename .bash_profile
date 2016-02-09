@@ -10,6 +10,3 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 alias gen_tags="ctags --tag-relative=yes -R -f ./.git/tags ."
-
-# added by Anaconda2 2.4.1 installer
-export PATH="/Users/aleksharma/anaconda/bin:$PATH"
