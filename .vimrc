@@ -18,6 +18,9 @@ Plugin 'kien/ctrlp.vim'
 " Syntax Highlighting
 Plugin 'scrooloose/syntastic'
 
+" Sane Haskell indentation
+Plugin 'itchyny/vim-haskell-indent'
+
 " Sane Python indentation
 Plugin 'hynek/vim-python-pep8-indent'
 

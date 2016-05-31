@@ -14,7 +14,10 @@
 		"Vintage"
 	],
 	"match_brackets_angle": true,
-	"rulers": [79,],
+	"rulers":
+	[
+		79
+	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_full_path": true,
