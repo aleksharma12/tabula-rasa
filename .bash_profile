@@ -1,8 +1,9 @@
-# Set architecture flags
+# set architecture flags
 export ARCHFLAGS="-arch x86_64"
-# Load .bashrc if it exists
+# load .bashrc if it exists
 test -f ~/.bashrc && source ~/.bashrc
 
+# generate tags in git projects
 alias gen_tags="ctags --tag-relative=yes -R -f ./.git/tags ."
 
 # added by Anaconda3 2.5.0 installer
