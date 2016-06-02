@@ -10,4 +10,4 @@ alias gen_tags="ctags --tag-relative=yes -R -f ./.git/tags ."
 export GOPATH=$HOME/code/go
 
 # Haskell development
-export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Haskell/bin:"
