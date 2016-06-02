@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Search for files
 Plugin 'kien/ctrlp.vim'
 
-" Syntax Highlighting
+" Syntax Checker
 Plugin 'scrooloose/syntastic'
 
 " Sane Python indentation
