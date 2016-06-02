@@ -6,8 +6,14 @@ test -f ~/.bashrc && source ~/.bashrc
 # generate tags in git projects
 alias gen_tags="ctags --tag-relative=yes -R -f ./.git/tags ."
 
-# Go development
+# language-specific things
+
+# Go
 export GOPATH=$HOME/code/go
 
-# Haskell development
+# Haskell
 export PATH="$PATH:$HOME/Library/Haskell/bin:"
+
+# Python
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
