@@ -3,3 +3,5 @@
 .vim/bundle/*
 # except for Vundle itself
 !.vim/bundle/Vundle.vim
+# also ignore those pesky .netrwhst files
+.netrwhist
