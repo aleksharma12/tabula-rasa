@@ -40,8 +40,8 @@ filetype plugin indent on
 syntax on
 
 " color scheme and background
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " MUST-HAVE OPTIONS
 " re-use same window and switch from unsaved window without saving first
