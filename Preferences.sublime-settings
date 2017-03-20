@@ -7,7 +7,7 @@
 	"draw_white_space": "none",
 	"find_selected_text": true,
 	"font_face": "Monaco",
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -24,5 +24,7 @@
 	"theme": "Sodarized Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_simple_full_screen": true
+	"use_simple_full_screen": true,
+	"word_wrap": true,
+	"wrap_width": 80
 }
