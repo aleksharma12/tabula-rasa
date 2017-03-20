@@ -7,3 +7,5 @@
 	default = simple
 [pull]
     default = current
+[alias]
+	up = pull --rebase --autostash
